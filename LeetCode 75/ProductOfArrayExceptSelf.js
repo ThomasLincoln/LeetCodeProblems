@@ -3,6 +3,14 @@
  * @return {number[]}
  */
 
+/**
+ * solution is based on get the product between all single values and your left neighbourhoods
+ * and in the next step, we do the same with the right side
+ *
+ * And finally we do the product between the two arrays
+ *
+ */
+
 const input = [0, 0]
 
 var productExceptSelf = function(nums) {
@@ -38,7 +46,4 @@ var productExceptSelf = function(nums) {
   return resposta
 };
 
-const resposta = productExceptSelf(input)
-console.log(resposta)
 
-//console.log(input.reduce((a, b) => a * b, 1))
